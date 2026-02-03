@@ -1,0 +1,285 @@
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<div class="container my-4">
+
+<!-- CABEÇALHO INSTITUCIONAL -->
+<div class="card shadow mb-4 border-0">
+  <div class="card-body bg-primary text-white text-center rounded">
+    <h2 class="fw-bold mb-1">
+      Unidade Regional de Ensino de Caieiras
+    </h2>
+    <h5 class="fw-light mb-3">
+      Vagas de Coordenador de Gestão Pedagógica
+    </h5>
+
+    <a href="https://decaieiras.educacao.sp.gov.br" 
+       class="btn btn-light fw-semibold">
+      ⬅ Voltar ao site principal
+    </a>
+  </div>
+</div>
+
+<h4 class="text-center bg-secondary text-white py-2 rounded">
+Processos em Aberto
+</h4>
+
+<div class="row mb-3">
+  <div class="col-md-3">
+    <input id="searchInput" class="form-control" placeholder="🔎 Buscar texto...">
+  </div>
+  <div class="col-md-3">
+    <input id="startDate" type="date" class="form-control" title="Filtrar Início">
+  </div>
+  <div class="col-md-3">
+    <input id="endDate" type="date" class="form-control" title="Filtrar Fim">
+  </div>
+  <div class="col-md-3">
+    <input id="interviewDate" type="date" class="form-control" title="Filtrar Entrevista">
+  </div>
+</div>
+
+<div class="table-responsive">
+<table class="table table-striped table-hover align-middle" id="processTable">
+<thead class="table-primary text-center sticky-top">
+<tr>
+<th onclick="sortTable(0)">Descrição ⬍</th>
+<th onclick="sortTable(1)">Início ⬍</th>
+<th onclick="sortTable(2)">Fim ⬍</th>
+<th onclick="sortTable(3)">Entrevista ⬍</th>
+<th>Download</th>
+</tr>
+</thead>
+<tbody>
+
+<tr>
+<td><strong>E.E. Paulo Duarte</strong></td>
+<td>06/02/2026</td>
+<td>10/02/2026</td>
+<td>12/02/2026</td>
+<td class="text-center"><a class="btn btn-success btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/ggp_ee_-paulo-duarte_03022026.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Parque Cento e Vinte II</strong></td>
+<td>02/02/2026</td>
+<td>12/02/2026</td>
+<td>13/02/2026</td>
+<td class="text-center"><a class="btn btn-success btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/02/edital-de-cgp-2026-pq122-03022026.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Aparecido Roberto Tonellotti</strong></td>
+<td>30/01/2026</td>
+<td>03/02/2026</td>
+<td>06/02/2026</td>
+<td class="text-center"><a class="btn btn-success btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/01/edital-coordenador-de-gesto-pedaggica-2026-tonellotti.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Rogério Levorin Prof.</strong></td>
+<td>30/01/2026</td>
+<td>05/02/2026</td>
+<td>06/02/2026</td>
+<td class="text-center"><a class="btn btn-success btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/01/edital_cgp_rogerio_levorin30012026.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Chácara Camponesa/Jardim Vassouras</strong></td>
+<td>26/01/2026</td>
+<td>29/01/2026</td>
+<td>04/02/2026</td>
+<td class="text-center"><a class="btn btn-success btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/01/edital-coordenador-camponesa-26012026.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Dr. Mario Toledo de Moraes</strong></td>
+<td>26/01/2026</td>
+<td>28/01/2026</td>
+<td>a definir</td>
+<td class="text-center"><a class="btn btn-success btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/01/edital-coordenador-de-gestao-pedagogica-2026.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Afonso Moreno</strong></td>
+<td>21/01/2026</td>
+<td>23/01/2026</td>
+<td>26/01/2026</td>
+<td class="text-center"><a class="btn btn-danger btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/01/edital-de-cgp-2026-afonso-21012026.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Otto Weiszflog</strong></td>
+<td>21/01/2026</td>
+<td>26/01/2026</td>
+<td>27/01/2026</td>
+<td class="text-center"><a class="btn btn-danger btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/01/edital-coordenador-otto-20012026.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Pedro Paulo de Aguiar</strong></td>
+<td>19/01/2026</td>
+<td>22/01/2026</td>
+<td>22/01/2026</td>
+<td class="text-center"><a class="btn btn-danger btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/01/edital-pedro-paulo-de-aguiar-14012026.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Bueno de Azevedo Filho - Prof.</strong></td>
+<td>19/01/2026</td>
+<td>22/01/2026</td>
+<td>23/01/2026</td>
+<td class="text-center"><a class="btn btn-danger btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/01/edital-cgp-bueno-de-a-filho-13012026.docx" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Pietro Petri</strong></td>
+<td>12/01/2026</td>
+<td>16/01/2026</td>
+<td>20/01/2026</td>
+<td class="text-center"><a class="btn btn-danger btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/01/vagas-cgp-pietro-petri-13012026.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Luiz Alexandre dos Santos Vereador</strong></td>
+<td>09/01/2026</td>
+<td>19/01/2026</td>
+<td>20/01/2026</td>
+<td class="text-center"><a class="btn btn-danger btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/01/edital--cgp-la-05112025.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Rituco Mitani - Profª</strong></td>
+<td>09/01/2026</td>
+<td>15/01/2026</td>
+<td>16/01/2026</td>
+<td class="text-center"><a class="btn btn-danger btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/01/edital-rituco-cgp-09012026.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Zilton Bicudo Prof.</strong></td>
+<td>12/01/2026</td>
+<td>16/01/2026</td>
+<td>a combinar</td>
+<td class="text-center"><a class="btn btn-danger btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2026/01/cgp-zilton-bicudo.pdf" target="_blank">Download</a></td>
+</tr>
+
+<tr>
+<td><strong>E.E. Jocimara Vieira da Silva</strong></td>
+<td>02/01/2026</td>
+<td>13/01/2026</td>
+<td>19/01/2026 14h</td>
+<td class="text-center"><a class="btn btn-danger btn-sm" href="https://midiasstoragesec.blob.core.windows.net/001/2025/12/ofcio-vaga-cgp-jocimara-correto.pdf" target="_blank">Download</a></td>
+</tr>
+
+</tbody>
+</table>
+</div>
+
+<nav>
+<ul class="pagination justify-content-center" id="pagination"></ul>
+</nav>
+</div>
+
+<script>
+const rows = [...document.querySelectorAll("#processTable tbody tr")];
+const tbody = document.querySelector("#processTable tbody");
+const pagination = document.getElementById("pagination");
+const search = document.getElementById("searchInput");
+const startDate = document.getElementById("startDate");
+const endDate = document.getElementById("endDate");
+const interviewDate = document.getElementById("interviewDate");
+
+let page = 1;
+const perPage = 8;
+let filtered = [...rows];
+let sortDir = 1;
+
+function parseDate(str){
+  if(!str || str.toLowerCase().includes('definir')) return null;
+  const parts = str.split('/');
+  if(parts.length !== 3) return null;
+  return new Date(parts[2], parts[1]-1, parts[0]);
+}
+
+function applyStatusColors(){
+  const today = new Date();
+  rows.forEach(r=>{
+    const end = parseDate(r.cells[2].innerText);
+    if(!end) return;
+
+    const diff = (end - today) / (1000*60*60*24);
+
+    r.classList.remove('table-danger','table-warning');
+
+    if(diff < 0){
+      r.classList.add('table-danger'); // vencido
+    } else if(diff <= 3){
+      r.classList.add('table-warning'); // vencendo
+    }
+  });
+}
+
+function filterAll(){
+  const txt = search.value.toLowerCase();
+  const sd = startDate.value ? new Date(startDate.value) : null;
+  const ed = endDate.value ? new Date(endDate.value) : null;
+  const id = interviewDate.value ? new Date(interviewDate.value) : null;
+
+  filtered = rows.filter(r=>{
+    const textMatch = r.innerText.toLowerCase().includes(txt);
+
+    const start = parseDate(r.cells[1].innerText);
+    const end = parseDate(r.cells[2].innerText);
+    const interview = parseDate(r.cells[3].innerText);
+
+    if(sd && (!start || start < sd)) return false;
+    if(ed && (!end || end > ed)) return false;
+    if(id && (!interview || interview.toDateString() !== id.toDateString())) return false;
+
+    return textMatch;
+  });
+
+  page = 1;
+  render();
+}
+
+function sortTable(col){
+  filtered.sort((a,b)=>{
+    let A = a.cells[col].innerText;
+    let B = b.cells[col].innerText;
+
+    const dA = parseDate(A);
+    const dB = parseDate(B);
+
+    if(dA && dB) return (dA - dB) * sortDir;
+    return A.localeCompare(B) * sortDir;
+  });
+
+  sortDir *= -1;
+  render();
+}
+
+function render(){
+  tbody.innerHTML = "";
+  filtered.slice((page-1)*perPage, page*perPage).forEach(r=>tbody.appendChild(r));
+
+  pagination.innerHTML = "";
+  const totalPages = Math.ceil(filtered.length / perPage);
+
+  for(let i=1;i<=totalPages;i++){
+    const li = document.createElement("li");
+    li.className = "page-item " + (i===page?"active":"");
+    li.innerHTML = `<span class="page-link">${i}</span>`;
+    li.onclick = ()=>{page=i;render()};
+    pagination.appendChild(li);
+  }
+}
+
+search.onkeyup = filterAll;
+startDate.onchange = filterAll;
+endDate.onchange = filterAll;
+interviewDate.onchange = filterAll;
+
+applyStatusColors();
+filterAll();
+</script>
