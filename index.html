@@ -72,6 +72,7 @@ Processos em Andamento
 
 <!-- LINHAS -->
 <!-- (todas as linhas exatamente como você enviou, apenas com a coluna status adicionada) -->
+<tr><td class="text-center status-cell"></td><td><strong>E.E. José de Barros Martins Editor</strong></td><td>11/02/2026</td><td>18/02/2026</td><td>20/02/2026</td><td class="text-center"><a class="btn btn-primary btn-sm" href="https://seesp-my.sharepoint.com/:b:/g/personal/jhonatas_almeida_educacao_sp_gov_br/IQAroOCyJ_ZHRaVOKmpO12qsAUF-Uqb8L1GZl8OkbyOJdEk?e=WUJ0lt" target="_blank">Download</a></td></tr>
 <tr><td class="text-center status-cell"></td><td><strong>E.E. Rogério Levorin Prof.</strong></td><td>09/02/2026</td><td>12/02/2026</td><td>13/02/2026</td><td class="text-center"><a class="btn btn-primary btn-sm" href="https://seesp-my.sharepoint.com/:b:/g/personal/jhonatas_almeida_educacao_sp_gov_br/IQCGt940T6YFSaQnRX5tWs64AX1pA8mnRxCzCcCtMRwz0Uk?e=QYLPLV" target="_blank">Download</a></td></tr>
 <tr><td class="text-center status-cell"></td><td><strong>E.E. Jardim São Francisco</strong></td><td>06/02/2026</td><td>10/02/2026</td><td>12/02/2026</td><td class="text-center"><a class="btn btn-primary btn-sm" href="https://seesp-my.sharepoint.com/:b:/g/personal/jhonatas_almeida_educacao_sp_gov_br/IQAbewasV2UkTIo4UZugWlSyARvzIstnxgeGCzw0O5bc88I?e=j9mk83" target="_blank">Download</a></td></tr>
 <tr><td class="text-center status-cell"></td><td><strong>E.E. Ana Maria Garrido Orlandin</strong></td><td>06/02/2026</td><td>11/02/2026</td><td>12/02/2026</td><td class="text-center"><a class="btn btn-primary btn-sm" href="https://seesp-my.sharepoint.com/:b:/g/personal/jhonatas_almeida_educacao_sp_gov_br/IQDY5bmRQlnCQ7k0nCB6H5dzAaiX1lcKlm-mqlpSg_FQRWI?e=UdFPSG" target="_blank">Download</a></td></tr>
@@ -130,7 +131,7 @@ function applyStatusColors(){
   else{
    const d=(end-today)/(1000*60*60*24);
    if(d<0){status="encerrado";color="text-danger";}
-   else if(d<=3){status="vencendo";color="text-warning";}
+   else if(d<=2){status="vencendo";color="text-warning";}
   }
   r.dataset.status=status;
   cell.innerHTML=`<i class="bi bi-circle-fill ${color}" style="font-size:1.2rem"></i>`;
@@ -185,6 +186,7 @@ filterAll();
 
 </body>
 </html>
+
 
 
 
